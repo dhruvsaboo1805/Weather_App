@@ -96,6 +96,9 @@ async function fetchWeatherInfo(cordinates)
         userInfoCantainer.classList.remove("active");
         const errorContainer = document.querySelector(".error-container");
         errorContainer.classList.add("active");
+        setTimeout(() => {
+            errorContainer.classList.remove("active");
+        } , 3000)
     }
 
 };
@@ -231,6 +234,10 @@ async function fetchSearchWeatherInfo(city){
         const errorContainer = document.querySelector(".error-container");
         errorContainer.classList.add("active");
         userInfoCantainer.classList.remove("active");
+        setTimeout(() => {
+            errorContainer.classList.remove("active");
+        } , 3000)
+
     }
 
 
